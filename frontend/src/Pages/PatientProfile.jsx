@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { usePatientContext } from "../Context/PatientContext";
 import HEPSummaryCard from "../Components/HEPSummaryCard";
 import InfoCard from "../Components/InfoCard";
+import StatsCard from "../Components/StatsCard" 
 
 function PatientProfile()
 {
@@ -25,6 +26,12 @@ function PatientProfile()
           hep={hep}
         />
       ))}
+      {<StatsCard 
+        key = {patient.id+"Stats"}
+        stats = {patient.stats}
+      />
+
+      }
     </div>
 }
 
