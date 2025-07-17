@@ -18,7 +18,7 @@ function PatientProfile()
         <PatientHeader 
             key={patient.id+"Header"}
             patient = {patient}
-            onPrimaryAction = {() => alert("This is profil esession for " + patient.name)}
+            onPrimaryAction = {() => alert("Is not possible start session now, try later. " + patient.name)}
         />
       {<InfoCard 
         key = {patient.id}

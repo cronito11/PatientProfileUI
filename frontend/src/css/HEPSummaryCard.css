@@ -37,7 +37,7 @@
 }
 
 .HEP-summary-card-edit-btn {
-  background-color: #3b82f6;
+  background-color: #01db55;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -49,7 +49,7 @@
 }
 
 .HEP-summary-card-edit-btn:hover {
-  background-color: #2563eb;
+  background-color: #00a914;
 }
 
 .info-card-save-btn {
