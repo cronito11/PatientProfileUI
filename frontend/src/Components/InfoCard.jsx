@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {usePatientContext} from "../Context/PatientContext"
+import { FiEdit } from 'react-icons/fi';
 import "../css/InfoCard.css"
 
 function InfoCard({patient})
@@ -40,7 +41,7 @@ function InfoCard({patient})
     }
     return <div className="info-card">
            <button className="info-card-edit-btn" type="button" onClick={toogleEdition}>
-                    Edit Icon
+                   <FiEdit size={32}/>
                 </button>
             <form className="info-card-form">
                 <label htmlFor="Phone">Phone:</label>

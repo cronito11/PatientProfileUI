@@ -1,0 +1,68 @@
+.HEP-summary-card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+.HEP-summary-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.HEP-summary-card label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.HEP-summary-card input[type="text"] {
+  width: 80%;
+  padding: 0.5rem 10%;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.HEP-summary-card input[type="text"]:disabled {
+  background-color: #e2e8f0;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.HEP-summary-card-edit-btn {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.HEP-summary-card-edit-btn:hover {
+  background-color: #2563eb;
+}
+
+.info-card-save-btn {
+  background-color: #10b981;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.info-card-save-btn:hover {
+  background-color: #059669;
+}

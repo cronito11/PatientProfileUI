@@ -1,0 +1,51 @@
+.patient-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafb;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.patient-avatar {
+   width: 56px;
+  height: 56px;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.patient-info {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.patient-info h2 {
+  font-size: 1.75rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.header-action .primary-btn {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.header-action .primary-btn:hover {
+  background-color: #2563eb;
+}

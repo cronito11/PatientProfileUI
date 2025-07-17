@@ -1,3 +1,5 @@
+import "../css/PatientHeader.css"
+
 function PatientHeader({ patient, onPrimaryAction }) {
   const getInitials = (name) => {
     return name
@@ -9,7 +11,7 @@ function PatientHeader({ patient, onPrimaryAction }) {
 
   return (
     <div className="patient-header card horizontal">
-      <div className="avatar-placeholder">
+      <div className="patient-avatar">
         {getInitials(patient.name)}
       </div>
 

@@ -1,3 +1,4 @@
+import "../css/Patients.css"
 import { Link } from "react-router-dom";
 import { usePatientContext } from "../Context/PatientContext";
 
@@ -5,8 +6,8 @@ function Patient()
 {
     const { patients } = usePatientContext();
     
-    return<>
-    <h2>Patients List</h2>
+    return<div className="Patients">
+    <h1>Patients List</h1>
 <ul>
         {patients.map((patient) => (
           <li key={patient.id}>
@@ -15,7 +16,7 @@ function Patient()
         ))}
       </ul>
     
-        </>
+     </div>
 }
 
 export default Patient;

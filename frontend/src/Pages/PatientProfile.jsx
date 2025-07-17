@@ -1,10 +1,11 @@
+import "../css/PatientProfile.css"
 import { useParams } from "react-router-dom";
 import { usePatientContext } from "../Context/PatientContext";
 import HEPSummaryCard from "../Components/HEPSummaryCard";
 import InfoCard from "../Components/InfoCard";
 import StatsCard from "../Components/StatsCard" 
 import PatientEducation from "../Components/PatientEducation";
-
+import PatientHeader from "../Components/PatientHeader";
 function PatientProfile()
 {
     const { patientId } = useParams();
@@ -13,20 +14,27 @@ function PatientProfile()
 
   if (!patient) return <p>Patient not found</p>;
 
-    return<div>
-      <h2>{patient.name}</h2>
+    return<>
+        <PatientHeader 
+            key={patient.id+"Header"}
+            patient = {patient}
+            onPrimaryAction = {() => alert("This is profil esession for " + patient.name)}
+        />
       {<InfoCard 
         key = {patient.id}
         patient = {patient}
         />}
+        <div className="HEP-Grid">
+
       {patient.heps.map((hep) => (
-        <HEPSummaryCard
+          <HEPSummaryCard
           key={hep.id}
           patientId={patient.id}
           patientName={patient.name}
           hep={hep}
-        />
-      ))}
+          />
+        ))}
+        </div>
       {<StatsCard 
         key = {patient.id+"Stats"}
         stats = {patient.stats}
@@ -36,7 +44,7 @@ function PatientProfile()
         key = {patient.id+"Education"}
         />
       }
-    </div>
+    </>
 }
 
 export default PatientProfile;

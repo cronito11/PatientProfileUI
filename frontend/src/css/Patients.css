@@ -1,0 +1,24 @@
+.Patients h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Patients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Patients li {
+  margin-bottom: 1rem;
+}
+
+.Patients a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.Patients a:hover {
+  color: #2563eb;
+}

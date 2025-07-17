@@ -1,0 +1,20 @@
+
+
+.Home h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Home a {
+  text-decoration: none;
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.Home a:hover {
+  background-color: #2563eb;
+}
