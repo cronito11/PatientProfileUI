@@ -3,6 +3,7 @@ import { usePatientContext } from "../Context/PatientContext";
 import HEPSummaryCard from "../Components/HEPSummaryCard";
 import InfoCard from "../Components/InfoCard";
 import StatsCard from "../Components/StatsCard" 
+import PatientEducation from "../Components/PatientEducation";
 
 function PatientProfile()
 {
@@ -30,7 +31,10 @@ function PatientProfile()
         key = {patient.id+"Stats"}
         stats = {patient.stats}
       />
-
+      }
+      {<PatientEducation
+        key = {patient.id+"Education"}
+        />
       }
     </div>
 }

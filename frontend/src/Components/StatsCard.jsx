@@ -1,5 +1,6 @@
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import "../css/StatsCard.css"
 
 function StatsCard({stats})
 {

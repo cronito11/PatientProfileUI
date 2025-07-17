@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import {usePatientContext} from "../Context/PatientContext"
+import "../css/InfoCard.css"
+
 function InfoCard({patient})
 {
     const {editPatientCardInfo} = usePatientContext();

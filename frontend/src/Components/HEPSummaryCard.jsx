@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import {usePatientContext} from "../Context/PatientContext"
+import "../css/HEPSummaryCard.css"
+
 function HEPSummaryCard({patientId, patientName, hep})
 {
     const {editPatientHEP} = usePatientContext();
