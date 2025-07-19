@@ -1,22 +1,40 @@
 .sideBar {
-  width: 12vw;
+  width: 38px;
   height: 100vh;
-  background-color: #1f2937; 
+  background-color: #845CC0; 
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 1rem;
+  justify-content: space-between;
+  padding: 0rem 1rem;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
+  text-align: center;
+  align-items: flex-start;
 }
 
-.sideBar h2 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #60a5fa;
+.top-buttons
+{
+  padding-top: 1.6rem;
+  width: 100%;
+}
+
+.bottom-buttons
+{
+  padding-bottom: 0.4rem;
+  width: 100%;
+}
+
+.logo
+{
+  max-width: 100%;
+}
+
+.navbar
+{
+  margin-top: 2.2rem;
 }
 
 .navbar ul {
@@ -26,7 +44,7 @@
 }
 
 .navbar li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .navbar a {
@@ -35,16 +53,20 @@
   display: flex;
   align-items: center;
   font-size: 1.1rem;
-  padding: 0.6rem 1rem;
   border-radius: 8px;
-  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+  margin:0;
 }
 
 .navbar a:hover {
-  background-color: #374151;
-  color: #ffffff;
+  color: #323232;
 }
 
-.navbar svg {
-  margin-right: 0.75rem;
+.navbar img {
+  margin: auto;
+}
+
+.logout-btn
+{
+   align-self: flex-end;
 }

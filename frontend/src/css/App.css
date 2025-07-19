@@ -9,16 +9,33 @@
 
 main
 {
+
+  margin-left: 38px; /* Solo si .sideBar es fixed */
+  flex: 1;
+  padding: 0;
+  padding-left: 2rem;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin-left: 13vw;
-  width: 85vw;
-  background-color: #f3f4f6;
-  color: #1f2937;
-  padding: 1vw;
-  padding-top: 0vw;
-  text-align: center;
+}
+
+#root
+{
+   display: flex;
+  height: 100vh;
+  width: 100vw;
+  /*
+  background-image: url("/src/assets/Background.png");
+  background-size: cover;
+  background-position: bottom;*/
+}
+
+.secundary-text-color
+{
+  color: #6C757D;
+}
+
+.border-left
+{
+  border-left: 2px solid #DEE2E6;
 }

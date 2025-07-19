@@ -1,68 +1,79 @@
-.HEP-summary-card {
-  background-color: #f9fafb;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  max-width: 500px;
+.HEP-summary-card
+{
+  background-color: #fff;
+  box-shadow: 0px 2px 6px #ADB5BD;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 1rem;
+  gap: 1rem;
 }
 
-.HEP-summary-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #1e293b;
-}
-
-.HEP-summary-card label {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-weight: 600;
-  color: #334155;
-}
-
-.HEP-summary-card input[type="text"] {
-  width: 80%;
-  padding: 0.5rem 10%;
-  margin-bottom: 1rem;
-  border: 1px solid #cbd5e1;
+.HEP-summary-card input {
+  border: none;
   border-radius: 6px;
   font-size: 1rem;
   color: #ffffff;
+  background-color: none;
+  text-align: center;
 }
 
-.HEP-summary-card input[type="text"]:disabled {
-  background-color: #e2e8f0;
-  color: #64748b;
+.HEP-summary-card input:disabled {
+  background-color: transparent;
+  color: #000;
   cursor: not-allowed;
 }
 
-.HEP-summary-card-edit-btn {
-  background-color: #01db55;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  margin-bottom: 1rem;
+.HEP-summary-card button
+{
+  border-radius: 0rem 1rem 1rem 0;
+  padding: 2rem 2.6rem;
+  background-color: #E791D9;
 }
 
-.HEP-summary-card-edit-btn:hover {
-  background-color: #00a914;
+.HEP-summary-card-form
+{
+    padding:     1.3rem 1.8rem;
 }
 
-.info-card-save-btn {
-  background-color: #10b981;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1.25rem;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+.HEP-summary-card-form h3
+{
+    margin: 0;
 }
 
-.info-card-save-btn:hover {
-  background-color: #059669;
+.form-section-row
+{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.form-section-column
+{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.edit-info
+{
+  display: flex;
+  justify-content: space-between;
+    gap: 8.6rem;
+  font-size: 0.9rem;
+align-items: self-start;
+}
+.edit-info h3
+{
+  display: flex;
+    align-items: flex-start;
+
+}
+.edited-time p
+{
+  margin:0;
+}
+
+.info-data
+{
+  margin-top: 1.3rem;
+    text-align: center;
 }

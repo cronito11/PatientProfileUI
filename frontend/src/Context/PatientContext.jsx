@@ -21,11 +21,6 @@ const dummyPatients = [
             id: "1",
             sessionsPerDay: 2,
             totalReps: 50
-        },
-        {
-            id: "2",
-            sessionsPerDay: 3,
-            totalReps: 60
         }
         ]
     },

@@ -1,0 +1,45 @@
+.profile-avatar {
+   width: 41.88px;
+  height: 39.92px;
+  background-color: #ADB5BD;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.profile-account
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.2vw;
+    margin-top: 1.7rem;
+}
+
+.profile-info
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    align-items: flex-start;
+}
+
+.profile-info h3
+{
+    margin: 0px;
+}
+.profile-info p
+{
+    margin: 0px;
+    margin-top: 0.1rem;
+    color: #6C757D;
+    font-size: 0.8rem;
+}
+.profile-info .primary-btn
+{
+    margin-top: 0.5rem;
+}

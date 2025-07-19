@@ -1,14 +1,11 @@
 import "../css/PatientEducation.css"
-
+import imagePatientEducation from "../assets/Images/RangeMotion.png"
 function PatientEducation() {
   return (
     <div className="patient-education card">
-      <h3>Patient Education</h3>
-      <div className="education-placeholder">
-        {}
-        <div className="placeholder-box">
-        </div>
-      </div>
+      <h4 className="border-bottom">Patient Education</h4>
+             <h4>Comming Soon</h4>
+             <img src={imagePatientEducation} alt="Range Motion" className="motion-image" />
     </div>
   );
 }

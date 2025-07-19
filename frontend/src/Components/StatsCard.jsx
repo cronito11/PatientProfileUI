@@ -1,6 +1,7 @@
-import { CircularProgressbar } from 'react-circular-progressbar';
+import DayStatus from './DayStatus';
 import 'react-circular-progressbar/dist/styles.css';
 import "../css/StatsCard.css"
+import fireIcon from "../assets/Images/fire.png"
 
 function StatsCard({stats})
 {
@@ -17,13 +18,27 @@ function StatsCard({stats})
     const { progress1 = 66, progress2 = 80 } = stats;
     
     return      <div className="stats-actions-panel card">
-    <h3>Stats & Actions</h3>
-     <div className="streaks-placeholder">
-        <CircularProgressbar value={progress1} text={`${progress1}%`} />
-        <CircularProgressbar value={progress2} text={`${progress2}%`} />
-      </div>
+      <div className='stats-section'>
+        <div className='stats-info'>
+        <div className='stats-header'>
 
-    <div className="stats horizontal">
+          <div className='Stat-title-container'>
+             <h3>Stats</h3>
+             <p>for period 3</p>
+            </div>
+            <div className='streaks-section'>
+              <h4>Streaks</h4>
+              <p>1 <img src={fireIcon} alt='fireIcon' className='fireIcon'/></p>
+            </div>
+        </div>
+             <div className='week-status'>
+          <DayStatus 
+           key={"Day1"}
+           day="Wed"
+           succes={false}
+           />
+          </div>
+          <div className="stats horizontal">
         <div className="stats-info">
             <label>Weeks Enrolled: </label>
             <span>{stats.weeksEnrolled}</span>
@@ -32,20 +47,22 @@ function StatsCard({stats})
               <label>Compliance: </label>
               <span>{stats.compliance}</span>
         </div>
-    </div>
-    <div className="horizontal stats-btn">
+        </div>
+        </div>
+       
+    
+        
          <button 
         className="primary-btn"
         type="button"
         onClick={handleViewStats}
       >View Stats</button>
-
-      <button 
+    </div>
+    <button 
         className="secondary-btn"
         type="button"
         onClick={handleBillingDetails}
       >View Billing Details</button>
-    </div>
  </div>
 }
 

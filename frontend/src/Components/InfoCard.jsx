@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {usePatientContext} from "../Context/PatientContext"
-import { FiEdit } from 'react-icons/fi';
 import "../css/InfoCard.css"
+import EditIcon from "../assets/Images/edit.png";
 
 function InfoCard({patient})
 {
@@ -39,31 +39,23 @@ function InfoCard({patient})
         if(!isEditing)
             setPatientInfoCard(patient.infoCard);
     }
-    return <div className="info-card">
-           <button className="info-card-edit-btn" type="button" onClick={toogleEdition}>
-                   <FiEdit size={32}/>
+    return <div className="info-card">      
+    <button className="info-card-edit-btn squareBtn" type="button" onClick={toogleEdition}>
+                   <img src={EditIcon} alt="Edit" className="edit-icon"/>
                 </button>
             <form className="info-card-form">
-                <label htmlFor="Phone">Phone:</label>
-                <input 
-                    type="text"
-                    name="phone"
-                    id="phone"
-                    value={patientInfo.phone}
-                    onChange={handleInputChange}
-                    disabled={!isEditing}
-                />
-                <label htmlFor="email">Email:</label>
-                <input
-                type="email"
-                name="email"
-                id="email"
-                value={patientInfo.email}
-                onChange={handleInputChange}
-                disabled={!isEditing}
-                />
+                <div className="form-input-section-left">
+                    <label htmlFor="Phone">Phone:</label>
+                    <input 
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        value={patientInfo.phone}
+                        onChange={handleInputChange}
+                        disabled={!isEditing}
+                    />
 
-                <label htmlFor="injuryLocation">Injury Location:</label>
+                    <label htmlFor="injuryLocation">Injury Location:</label>
                 <input
                 type="text"
                 name="injuryLocation"
@@ -73,6 +65,19 @@ function InfoCard({patient})
                 disabled={!isEditing}
                 />
 
+                </div>
+                <div className="form-input-section-right">
+
+                <label htmlFor="email">Email:</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                value={patientInfo.email}
+                onChange={handleInputChange}
+                disabled={!isEditing}
+                />
+                
                 <label htmlFor="diagnosis">Diagnosis:</label>
                 <input
                 type="text"
@@ -82,6 +87,8 @@ function InfoCard({patient})
                 onChange={handleInputChange}
                 disabled={!isEditing}
                 />
+
+                </div>
                  { isEditing && (
                 <button className="info-card-save-btn" type="submit" onClick={handleSave}>
                     Save Changes
@@ -89,6 +96,7 @@ function InfoCard({patient})
                 )}
                
             </form>
+            
         </div>
 }
 

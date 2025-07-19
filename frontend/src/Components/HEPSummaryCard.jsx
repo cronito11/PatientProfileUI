@@ -42,27 +42,38 @@ function HEPSummaryCard({patientId, patientName, hep})
            <button className="HEP-summary-card-edit-btn call-to-action" type="button" onClick={toogleEdition}>
                     Edit HEP 
                 </button>
-            <form className="HEP-summary-card-form">
-                <h2>New HEP for for {patientName} (#{hep.id})</h2>
-                <label htmlFor="sessionsPerDay">Session/day:</label>
-                <input
-                type="text"
-                name="sessionsPerDay"
-                id="sessionsPerDay"
-                value={hepSummary.sessionsPerDay}
-                onChange={handleInputChange}
-                disabled={!isEditing}
-                />
+            <form className="HEP-summary-card-form form-section-column">
+                <div className="edit-info form-section-row">
+                    <h3>New HEP for for {patientName} (#{hep.id})</h3>
+                    <div className="edited-time form-section-row">
+                        <p className="secundary-text-color">Edited</p><p>16 hours ago</p>
+                    </div>
+                </div>
+                <div className="info-data form-section-row">
+                    <div className="form-section-column">
+                            <label htmlFor="sessionsPerDay">Session/day:</label>
+                            <input
+                            type="text"
+                            name="sessionsPerDay"
+                            id="sessionsPerDay"
+                            value={hepSummary.sessionsPerDay}
+                            onChange={handleInputChange}
+                            disabled={!isEditing}
+                            />
+                    </div>
+                    <div className="form-section-column border-left">
+                        <label htmlFor="totalReps">Total reps:</label>
+                        <input
+                        type="text"
+                        name="totalReps"
+                        id="totalReps"
+                        value={hepSummary.totalReps}
+                        onChange={handleInputChange}
+                        disabled={!isEditing}
+                        />
+                    </div>
+                </div>
 
-                <label htmlFor="totalReps">Total reps:</label>
-                <input
-                type="text"
-                name="totalReps"
-                id="totalReps"
-                value={hepSummary.totalReps}
-                onChange={handleInputChange}
-                disabled={!isEditing}
-                />
                  { isEditing && (
                 <button className="info-card-save-btn" type="submit" onClick={handleSave}>
                     Save Changes
