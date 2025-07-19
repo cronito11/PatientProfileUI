@@ -5,6 +5,7 @@
   margin-bottom: 1rem;
   flex-direction: row;
   padding: 1.3rem 1.8rem;
+  justify-content: center;
 }
 
 .HEP-content
@@ -13,15 +14,4 @@
   flex-direction: column;
   gap: 1.5rem;
   align-items: stretch;
-}
-
-.call-to-action-Profile
-{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 1rem;
-  background-color: #845EC0;
-  width: 4.5rem;
-  height: 4.5rem;
 }
