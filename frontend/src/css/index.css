@@ -12,8 +12,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../assets/Images/PatientProfile.jpg");
 }
+
+#root
+{
+   display: flex;
+  height: 100vh;
+  width: 100vw;
+  
+  background-color: #fff;
+  background-image: url("/src/assets/Background.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
 
 a {
   font-weight: 500;
@@ -38,7 +50,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: 1px solid transparent;
   font-size: 1em;
   font-weight: 500;

@@ -1,66 +1,131 @@
 .stats-actions-panel.card {
   display: flex;
   flex-direction: column;
+  gap: 1.1rem;
+  position: relative;
+  min-height: 68vh;
 }
 
 .stats-actions-panel h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1e293b;
+  color: #000000;
+    margin: 0;
 }
 
-.streaks-placeholder {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  max-width: 180px;
-  margin: auto;
-}
-
-.stats.horizontal {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+.stats-actions-panel h4 {
   font-size: 1rem;
-  color: #334155;
+  margin-bottom: 1rem;
+  color: #000000;
+    margin: 0;
 }
 
-.stats-info label {
-  font-weight: 600;
-  margin-right: 0.5rem;
+.stats-section p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #6C757D;
+  margin: 0;
 }
 
-.stats-btn.horizontal {
+.stats-actions-panel .secondary-btn
+{
+  background-color: #2196F3;
+}
+.streaks-section
+{
+  display: row;
+  flex-direction: row;
+  text-align: center;
+  align-items: stretch;
+  align-content: center;
+}
+
+.streak-number
+{
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
-.primary-btn {
-  background-color:#845EC0;
+.stats-section
+{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.stats-info
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0 1rem 1rem 1rem ;
+}
+
+.stats-info-advance
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 50%;
+  font-size: 0.9rem;
+}
+
+.stats 
+{
+  text-align: center;
+}
+
+.stats-header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  gap:7.3rem;
+}
+
+.stats-section .primary-btn
+{
+  background-color: #EEA63A;
+  padding: 2.3rem;
+    border-radius: 0 1rem 1rem 0;
+
+}
+
+.stats-actions-panel .horizontal
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stats-actions-panel .secondary-btn
+{
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
   color: #fff;
-  border: none;
-  padding: 0.4rem 1.25rem;
-  border-radius: 8px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  padding: 0.6rem;
+  gap: 1.6rem;
+}
+.left-border
+{
+    border-left: 2px solid #E9ECEF;
 }
 
-.primary-btn:hover {
-  background-color: #6b49a2;
-}
 
-.secondary-btn {
-  background-color: #94a3b8;
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.25rem;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.secondary-btn:hover {
-  background-color: #64748b;
+.call-to-action-Profile
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #845EC0;
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: 0px 2px 6px #ADB5BD;
 }

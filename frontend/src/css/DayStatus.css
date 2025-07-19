@@ -1,0 +1,15 @@
+.dayContainer
+{
+    padding: 0.1rem;
+    align-items: center;
+    text-align: center;
+    padding: 0.1rem;
+
+}
+
+
+.dayContainer img, .dayContainer p{
+    width: 100%;  
+font-size: 0.6rem;
+margin: auto;
+}

@@ -19,16 +19,6 @@ main
   flex-direction: column;
 }
 
-#root
-{
-   display: flex;
-  height: 100vh;
-  width: 100vw;
-  /*
-  background-image: url("/src/assets/Background.png");
-  background-size: cover;
-  background-position: bottom;*/
-}
 
 .secundary-text-color
 {

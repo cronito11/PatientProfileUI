@@ -14,7 +14,7 @@ const dummyPatients = [
         },
         stats: {
             weeksEnrolled: 6,
-            compliance: "90%",
+            compliance: "90/100",
         },
         heps: [
         {
@@ -37,7 +37,7 @@ const dummyPatients = [
         stats:
         {
             weeksEnrolled: 3,
-            compliance: "75%",
+            compliance: "75/100",
         },
         heps: [
         {

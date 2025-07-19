@@ -40,7 +40,9 @@ function PatientProfile()
         key = {patient.id+"Stats"}
         stats = {patient.stats}
       />
-      }          
+      }
+
+
             </div>
       
       

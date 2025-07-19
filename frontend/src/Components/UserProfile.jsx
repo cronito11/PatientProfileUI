@@ -1,6 +1,6 @@
 import "../css/UserProfile.css";
 
-function UserProfile({patient, onPrimaryAction })
+function UserProfile({patient, onPrimaryAction, text })
 {
     const getInitials = (name) => {
     return name
@@ -18,7 +18,7 @@ function UserProfile({patient, onPrimaryAction })
         <h3 className="user-name">{patient.name}</h3>
         <p>Last Activity {" Mar 20, 2019 23:14"}</p>
         <button className="primary-btn" onClick={onPrimaryAction}>
-          Start Session
+          {text}
         </button>
 
       </div>

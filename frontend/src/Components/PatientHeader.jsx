@@ -10,12 +10,13 @@ function PatientHeader({ patient, onPrimaryAction }) {
     <div className="patient-header">
       <RouteInfo 
         key={"Route"}
-        route = {`Dashboard/${patient.name}`}
+        route = {`Dashboard / ${patient.name}`}
         />
       <div className="patient-account-info">
         <UserProfile 
           patient={patient}
           onPrimaryAction = {onPrimaryAction}
+          text= {"Discharge Patient"}
         />
         <InfoCard 
           patient={patient}

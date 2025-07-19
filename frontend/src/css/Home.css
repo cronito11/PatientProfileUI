@@ -1,4 +1,8 @@
-
+.Home
+{
+  margin: auto;
+  text-align: center;
+}
 
 .Home h1 {
   font-size: 2rem;
@@ -13,6 +17,7 @@
   border-radius: 8px;
   font-weight: 500;
   transition: background-color 0.2s ease;
+  margin: auto;
 }
 
 .Home a:hover {
